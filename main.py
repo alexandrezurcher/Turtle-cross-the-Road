@@ -30,7 +30,10 @@ while game_is_on:
             game_is_on = False
 
 
-
+    #Detect if the player reaches the other side
+    if player.is_at_finish_line():
+        player.go_to_start()
+        car_manager.level_up()
 
 
 screen.exitonclick()
