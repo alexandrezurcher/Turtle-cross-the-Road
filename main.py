@@ -19,7 +19,7 @@ screen.onkey(fun=player.go_up, key="Up")
 
 game_is_on = True
 while game_is_on:
-    time.sleep(0.001)
+    time.sleep(0.1)
     screen.update()
 
     car_manager.create_car()
