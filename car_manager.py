@@ -11,8 +11,8 @@ class CarManager:
         self.car_speed = STARTING_MOVE_DISTANCE
 
     def create_car(self):
-        random_chance = random.randint(1, 7)
-        if random_chance ==1:
+        random_chance = random.randint(1, 6)
+        if random_chance ==1 or random_chance ==6:
             new_car = Turtle("square")
             new_car.shapesize(stretch_wid=1, stretch_len=2)
             new_car.penup()
